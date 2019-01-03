@@ -1,181 +1,218 @@
- * { margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-            body {margin: 0;
-                padding: 0;
-                background-image: url("images/mask1.jpg");
-                background-repeat: repeat; 
-            }
-            header {
-                display: flex; 
-                align-items: center;
-
-                width:100%;
-                height: 130px;
-                background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(17, 16, 16));}
-            .text-shadow {
-                
-                font-family:fantasy;
-                font-size: 3em;
-                color:rgb(127, 156, 75);
-                text-shadow: 1px 1px #bbb7bb, 1px -1px #363636, -1px 1px #313131, -1px -1px #363536, 3px 3px 6px rgba(0,0,0,.5);
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/mask1.jpg");
+  background-repeat: repeat;
 }
-        
-        
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+     -ms-flex-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+     -ms-flex-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+  width: 100%;
+  height: 130px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgb(17, 16, 16)
+  );
+}
+.text-shadow {
+  font-family: fantasy;
+  font-size: 3em;
+  color: rgb(127, 156, 75);
+  text-shadow: 1px 1px #bbb7bb, 1px -1px #363636, -1px 1px #313131,
+    -1px -1px #363536, 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
 .container_my {
-    background-image: url("images/tlo.png");
-    width:90%;
-    margin: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: calc(100vh - 80px);
-
+  background-image: url("images/tlo.png");
+  width: 90%;
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 80px);
 }
-.leftside{
-    flex:40%;
-    opacity:0.3;
-    padding: 20px;
+.leftside {
+  flex: 40%;
+  opacity: 0.3;
+  padding: 20px;
 }
-.main{
-    flex:60%;
-    background-image: "images/tlo.jpg";
-    padding: 20px;
+.main {
+  flex: 60%;
+  background-image: "images/tlo.jpg";
+  padding: 20px;
 }
 .menu {
   display: flex;
-background-color: #363636;}
+  background-color: #363636;
+}
 .menu a {
-    float: left;
+  float: left;
   display: block;
-  color:forestgreen;
+  color: forestgreen;
   padding: 10px 16px;
-  margin:0px auto;
+  margin: 0px auto;
   background: black;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 400;
-  }
+}
 .menu a:hover {
   background-color: grey;
-  color:black;
+  color: black;
   text-decoration: none;
 }
 
 footer {
-    display: flex; 
-    align-items: center;
-   
-   height: 80px;
-   color:darkgreen;
-   font-size: 1.2rem;
-    text-align: center;
-    background:black;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+       -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+       -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+
+  height: 80px;
+  color: darkgreen;
+  font-size: 1.2rem;
+  text-align: center;
+  background: black;
 }
 
 #title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-text-align: center;
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+    -1px 0px 2px rgba(255, 255, 255, 0);
+  text-align: center;
 }
 .container a {
-    color:darkgreen;
-    font-size: 1.2rem;
+  color: darkgreen;
+  font-size: 1.2rem;
 }
-.container p {font-size: 1.2rem;}
-.container h4 {color: darkolivegreen;}
+.container p {
+  font-size: 1.2rem;
+}
+.container h4 {
+  color: darkolivegreen;
+}
 @media (max-width: 700px) {
-    .container_my, .menu {   
-        flex-direction: column;
-    }
-}
-   
-     
-     
-.accordion {
-    margin:0 auto;
-    font-size:14px;
-    border:1px solid ;
-    border-radius:10px;
-    width:100%;
-    padding:10px;
- }
-.accordion ul {
-    list-style:none;
-    margin:0;
-    padding:0;    
-}
-.accordion li {
-    margin:0;
-    padding:0;
-}
-.accordion [type=radio], .accordion [type=checkbox] {
-    display:none;
-}
-.accordion label {
-    display:block;
-    font-size:16px;
-    line-height:16px;
-    background:rgb(127, 156, 75);
-    border:1px solid #129633;
-    color:black;
-    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
-    cursor:pointer;
-    text-transform:uppercase;
-    font-weight: 800;
-}
-.accordion ul li label:hover {
-    background:#17693c;
-    color:#FFF;
-    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
-}
-.accordion .content {
-    padding:0 10px;
-    overflow:hidden;
-    border:1px solid #fff;
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-}
-.accordion p {
-    color:#333;
-    margin:0 0 10px;
-}
-.accordion h4 {
-    color:#17693c;
-    padding:0;
-    margin:10px 0;
+  .container_my,
+  .menu {
+    flex-direction: column;
+  }
 }
 
-.accordion .content h6{
-    color: darkolivegreen;
+.accordion {
+  margin: 0 auto;
+  font-size: 14px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.accordion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion li {
+  margin: 0;
+  padding: 0;
+}
+.accordion [type="radio"],
+.accordion [type="checkbox"] {
+  display: none;
+}
+.accordion label {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  background: rgb(127, 156, 75);
+  border: 1px solid #129633;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.accordion ul li label:hover {
+  background: #17693c;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.accordion .content {
+  padding: 0 10px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+.accordion p {
+  color: #333;
+  margin: 0 0 10px;
+}
+.accordion h4 {
+  color: #17693c;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.accordion .content h6 {
+  color: darkolivegreen;
 }
 
 .vertical ul li {
-    overflow:hidden;
-    margin:0 0 1px;
+  overflow: hidden;
+  margin: 0 0 1px;
 }
 .vertical ul li label {
-    padding:10px;
+  padding: 10px;
 }
 
 .vertical ul li label:hover {
-    border:1px solid  darkolivegreen;;
+  border: 1px solid darkolivegreen;
 }
 .vertical ul li .content {
-    height:0px;
-    border-top:0;
-    transition: all .5s ease-out;
+  height: 0px;
+  border-top: 0;
+  transition: all 0.5s ease-out;
 }
-.vertical [type=checkbox]:checked ~ label ~ .content {
-    height:100%;
-    border:1px solid darkolivegreen;
+.vertical [type="checkbox"]:checked ~ label ~ .content {
+  height: 100%;
+  border: 1px solid darkolivegreen;
 }
